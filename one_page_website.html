@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .homepage-section {
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .homepage-section h1 {
+            font-size: 2.5em;
+            margin: 0.5em 0;
+        }
+        .homepage-section p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .homepage-section button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .homepage-section button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="homepage-section">
+    <h1>Welcome to Our Website</h1>
+    <p>We are glad to have you here. Explore our content and discover what we have to offer!</p>
+    <button>Learn More</button>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .image-gallery-section {
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 80%;
+            margin: 20px auto;
+        }
+        .image-gallery-section h1 {
+            font-size: 2.5em;
+            margin: 0.5em 0;
+        }
+        .image-gallery-section p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-gallery-section">
+    <h1>Our Gallery</h1>
+    <p>Take a look at some of our featured photos below.</p>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/200" alt="Sample Image 1">
+        <img src="https://via.placeholder.com/200" alt="Sample Image 2">
+        <img src="https://via.placeholder.com/200" alt="Sample Image 3">
+        <img src="https://via.placeholder.com/200" alt="Sample Image 4">
+        <img src="https://via.placeholder.com/200" alt="Sample Image 5">
+        <img src="https://via.placeholder.com/200" alt="Sample Image 6">
+    </div>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .contact-form-section {
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 80%;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        .contact-form-section h1 {
+            font-size: 2.5em;
+            margin: 0.5em 0;
+        }
+        .contact-form-section p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            font-size: 1em;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="contact-form-section">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Please fill out the form below and we'll get in touch with you shortly.</p>
+    <form class="contact-form" action="your-server-endpoint" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .video-section {
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .video-section h1 {
+            font-size: 2.5em;
+            margin: 0.5em 0;
+        }
+        .video-section p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="video-section">
+    <h1>Our Featured Video</h1>
+    <p>Watch the video below to learn more about our services.</p>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .footer-section {
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-section .footer-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Navigation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+        section {
+            padding: 50px 20px;
+            min-height: 100vh;
+        }
+        #home {
+            background: #f4f4f4;
+        }
+        #about {
+            background: #e2e2e2;
+        }
+        #services {
+            background: #d0d0d0;
+        }
+        #contact {
+            background: #bebebe;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Website</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Home</h2>
+    <p>Welcome to our homepage. Here you will find the latest updates and news.</p>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Learn more about our company and our mission.</p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <p>Discover the wide range of services we offer to our clients.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Get in touch with us through the contact information provided here.</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+Playing GTA 5 As A POLICE OFFICER Highway Patrol| GTA 5 Lspdfr Mod| Live
+https://youtu.be/pXodaIIlyEQ
+►Follow Me
+Instagram| https://bit.ly/3gTZYH1
+Facebook| https://bit.ly/3a5XRP4
+Twitter| https://bit.ly/3oMAL3S
+TikTok| https://bit.ly/3gU1mcH
+Join this channel to get access to perks:
+https://www.youtube.com/channel/UCbIt...
+Content Creator @ Veloce Esports: https://www.youtube.com/c/Veloce
+Welcome to another episode of LSPDFR, as we'll try our best to survive this one.
+
+San Andreas Highway Patrol Hellcat Charger H.E.A.T. - https://bit.ly/3PvUS3X
+
+Prowler Radar 1.0.0 - https://www.lcpdfr.com/downloads/gta5...
+
+Your lucky Entry to the Giveaway: https://gleam.io/OgV9w/stevethegamer5...
+
+Cadillac ESC21 Unmarked [ELS] [Replace] 1.0.0 https://www.lcpdfr.com/downloads/gta5...
+
+2022 Unmarked Lincoln Navigator+ Los Santos x Blaine County Sheriff Pack https://patreon.com/emergencydistribu... 
+
+ LSSD & Friends 1.0.0 - https://www.lcpdfr.com/downloads/gta5...
+
+2021 GMC Yukon ELS Undercover (RnB/BnW, Addon/Replace) 1.0.0 https://bit.ly/2ZGslDW
+
+NEW PACK   [ELS] Blaine County & Friends 1.0.0 https://bit.ly/3nwKEnD
+
+ Playing GTA 5 As A POLICE OFFICER Supercar Patrol Sunday| AMG GTR| https://youtu.be/zHwQrvLF50k 
+
+[ELS] Chicago Police Pack [DLC/REPLACE] 3.0 - https://bit.ly/3lweMy6
+
+EUP Chicago Police Pack (8.2) 1.6 - https://bit.ly/3zpr1ln
+
+[ELS] BlueGhost's Unmarked Pack 2021 Q2 Update (Final) - https://bit.ly/3sTtSBq
+
+[ELS] Los Santos PD Mega Pack 1.1 - https://bit.ly/3w6E7Cn
+
+OCSO Pack - https://bit.ly/3vWCZ46
+
+Koenigsegg CCX | Hot Pursuit Police [Add-On / Replace | Template] 2.0 - https://bit.ly/2Tawu0a
+
+GTA 5 Mod Supercars Sunday Patrol| Bugatti Chiron Police | Hot Pursuit Police [Add-On / Replace | Template] -  https://bit.ly/3gE3Z3Y
+
+Playing GTA 5 As A POLICE OFFICER Friday Gang unit Patrol| Dodge Magnum|
+[DLC/REPLACE] LSPD VEHICLE PACK 1.0.1 - https://www.lcpdfr.com/downloads/gta5...
+
+FBI Callouts Beta 1.7 - https://bit.ly/3oGoTl8
+
+[EUP] San Andreas State Trooper EUP Pack (8.2) 1.0.0 - https://bit.ly/3u3qPpe
+
+[ELS] San Andreas State Police Mega Pack 1.0.0 - https://bit.ly/2S3HRpI
+
+[ELS] BCSO Mini Pack 1.1.0 - https://www.lcpdfr.com/downloads/gta5...
+
+Stevethegamer55 LSPDFR Mod list - http://bit.ly/2YGkx1o
+ELS Blaine County Sheriff Add-on 1.0.0 - https://www.lcpdfr.com/downloads/gta5...
+
+[ELS] 2021 Tahoe Blaine County (Orange County Based) 1.0.0 - https://www.lcpdfr.com/downloads/gta5...
+
+[ELS] BlueGhost's Unmarked Pack 2021 Q1 Update - https://www.lcpdfr.com/downloads/gta5...
